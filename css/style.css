@@ -12,3 +12,13 @@ nav {
     border-bottom: rgb(200, 200, 200);
     line-height: .1rem;
 }
+
+.home {
+    float: left;
+    width: 70%;
+}
+
+.home-body {
+    position: absolute;
+    right: 39%;
+}
