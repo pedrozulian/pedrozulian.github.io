@@ -24,9 +24,34 @@ nav {
 }
 
 .main-header {
-    font-size: .8rem;
+    font-size: .7rem;
     font-weight: bolder;
     text-transform: uppercase;
     text-align: center;
     color: rgb(150, 150, 150);
+}
+
+/* BUTTONS */
+.btn-large {    /* large button */
+    border: none;
+    border-radius: 30px;
+    width: 25rem;
+    padding: .8rem;
+    margin: .5rem;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-size: .8em;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.btn-small {    /* small button */
+    border: none;
+    border-radius: 50%;
+    padding: .8rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
