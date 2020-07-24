@@ -38,7 +38,7 @@ nav {
     width: 25rem;
     padding: .8rem;
     margin: .5rem;
-    text-decoration: none;
+    text-decoration: none !important;
     text-align: center;
     display: inline-block;
     font-size: .8em;
@@ -52,6 +52,17 @@ nav {
     border-radius: 50%;
     padding: .8rem;
     text-align: center;
-    text-decoration: none;
+    text-decoration: none !important;
     display: inline-block;
+}
+
+/* linkedin colors */
+.btn-linkedin {
+    background-color: rgb(51, 170, 218);
+    color: rgb(250, 250, 250);
+}
+
+.btn-linkedin:hover {
+    background-color: rgb(93, 179, 214 );
+    color: rgb(250, 250, 250);
 }
