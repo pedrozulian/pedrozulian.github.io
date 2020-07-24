@@ -22,3 +22,11 @@ nav {
     position: absolute;
     right: 39%;
 }
+
+.main-header {
+    font-size: .8rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(150, 150, 150);
+}
