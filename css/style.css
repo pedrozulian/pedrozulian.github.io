@@ -15,12 +15,10 @@ nav {
 
 .home {
     float: left;
-    width: 70%;
 }
 
-.home-body {
-    position: absolute;
-    right: 39%;
+.commits {
+    float: right;
 }
 
 .main-header {
@@ -51,7 +49,7 @@ nav {
 .btn-small {    /* small button */
     border: none;
     border-radius: 50%;
-    padding: .8rem;
+    padding: .75rem;
     text-align: center;
     text-decoration: none !important;
     display: inline-block;
@@ -90,8 +88,35 @@ nav {
     color: rgb(250, 250, 250);
 }
 
+/* facebook colors */
+.btn-facebook {
+    background-color: rgb(59, 89, 152);
+    color: rgb(250, 250, 250);
+}
+
+.btn-facebook:hover {
+    background-color: rgb(82, 103, 148);
+    color: rgb(250, 250, 250);
+}
+
+/* instagram colors */
+.btn-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: initial;
+    color: rgb(250, 250, 250);
+  }
+
+.btn-instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fef7b5  0%, #fef7b5 5%,  #fd8074 45%,  #d346a8 60%,  #4c74e7 90%);
+    color: rgb(250, 250, 250);
+}
+
 /* ICONS */
 .icon {
     margin-right: .5rem;
     height: 1.2rem;
+}
+
+.icon-large {
+    height: 1.5rem;
 }
