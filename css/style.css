@@ -3,7 +3,6 @@ html {
 }
 
 body {
-    overflow: hidden;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -13,13 +12,6 @@ nav {
     line-height: .1rem;
 }
 
-.home {
-    float: left;
-}
-
-.commits {
-    float: right;
-}
 
 .main-header {
     font-size: .7rem;
@@ -48,6 +40,7 @@ nav {
 
 .btn-small {    /* small button */
     border: none;
+    margin: .5rem;
     border-radius: 50%;
     padding: .75rem;
     text-align: center;
