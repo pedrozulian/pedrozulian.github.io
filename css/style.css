@@ -21,6 +21,12 @@ nav {
     color: rgb(150, 150, 150);
 }
 
+.about-me > div {
+    display: inline-block;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
 /* BUTTONS */
 .btn-large {    /* large button */
     border: none;
