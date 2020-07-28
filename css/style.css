@@ -12,6 +12,9 @@ nav {
     line-height: .1rem;
 }
 
+.commits {
+    overflow-y: auto;
+}
 
 .main-header {
     font-size: .7rem;
