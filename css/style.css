@@ -14,6 +14,16 @@ nav {
 
 .commits {
     overflow-y: auto;
+    font-size: .9rem;
+}
+
+.message {
+    font-weight: bold;
+}
+
+.committed {
+    margin-left: .6rem;
+    margin-right: .6rem;
 }
 
 .main-header {
