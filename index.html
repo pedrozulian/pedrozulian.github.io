@@ -117,4 +117,22 @@
 </section>
     
 </body>
+
+<script>
+
+    let ajax = new XMLHttpRequest();
+    let url = "";
+
+    ajax.open('GET', "https://api.github.com/users/pedrozulian/events", true);
+    ajax.send();
+    ajax.responseType = "json";
+
+    ajax.onreadystatechange = function() {
+        if (ajax.readyState == 4 && ajax.status == 200) {
+            let data = ajax.response;
+        }
+    }
+
+</script>
+
 </html>
