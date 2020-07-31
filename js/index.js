@@ -1,5 +1,3 @@
-import { Repository } from "./items.js";
-
 const ajax = new XMLHttpRequest();
 const listCommits = [];
 const myUser = "pedrozulian";
@@ -17,11 +15,24 @@ ajax.onreadystatechange = function() {
         const data = ajax.response;
         
         this.listCommits = data.slice(0, 10);
-
-        console.log(this.listCommits);
+        this.listCommits = getCommitsFromGithub(this.listCommits);
     }
 }
 
 function formatUrlApiGithub(urlApiGithub, myUser) {
-    return urlApiGithub+"/"+myUser+"/"+"events"
+    return urlApiGithub+"/"+myUser+"/"+"events";
+}
+
+function getCommitsFromGithub(data) {
+    return data.map((row) => {
+        const repository = row.repo.name;
+        const message = row.payload.commits.map((row) => { return row.message });
+        const sha = row.payload.commits.map((row) => { return row.sha });
+        return {
+            repository: repository,
+            message: message[0],
+            sha: sha[0],
+            url: "https://github.com/"+repository+"/commit/"+sha
+        }
+    });
 }
