@@ -2,11 +2,15 @@ import { Repository } from "./items.js";
 
 const ajax = new XMLHttpRequest();
 const listCommits = [];
-const gitUrl = "https://api.github.com/users/pedrozulian/events";
+const myUser = "pedrozulian";
+const urlApiGithub = "https://api.github.com/users";
 
-ajax.open('GET', gitUrl, true);
+const url = formatUrlApiGithub(urlApiGithub, myUser);
+
+ajax.open('GET', url, true);
 ajax.send();
 ajax.responseType = "json";
+
 
 ajax.onreadystatechange = function() {
     if (ajax.readyState == 4 && ajax.status == 200) {
@@ -16,4 +20,8 @@ ajax.onreadystatechange = function() {
 
         console.log(this.listCommits);
     }
+}
+
+function formatUrlApiGithub(urlApiGithub, myUser) {
+    return urlApiGithub+"/"+myUser+"/"+"events"
 }
