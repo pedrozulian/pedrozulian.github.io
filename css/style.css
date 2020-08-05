@@ -12,18 +12,24 @@ nav {
     line-height: .1rem;
 }
 
-.commits {
+.commit {
     overflow-y: auto;
     font-size: .9rem;
 }
 
-.message {
-    font-weight: bold;
+.committed {
+    display: inline-block;
+    margin: 0 4px 0 4px;
 }
 
-.committed {
-    margin-left: .6rem;
-    margin-right: .6rem;
+.committed > span > a.committed-text {
+    text-decoration: none !important;
+    color: rgb(250, 112, 53);
+}
+
+.message {
+    font-weight: bold;
+    display: inline-block;
 }
 
 .main-header {
