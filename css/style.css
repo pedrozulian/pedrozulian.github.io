@@ -73,6 +73,12 @@ nav {
     display: inline-block;
 }
 
+@media screen and (max-width: 500px) {
+    .btn-large {
+        width: 20rem !important;
+    }
+}
+
 /* linkedin colors */
 .btn-linkedin {
     background-color: rgb(51, 170, 218);
