@@ -138,3 +138,35 @@ nav {
 .icon-large {
     height: 1.5rem;
 }
+
+/* TIMELINE */
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+
+ul.timeline > li {
+    padding-left: 20px;
+}
+
+ul.timeline > li span.message:before {
+    content: ' ';
+    background: white;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #555555;
+    left: .6rem;
+    width: .8rem;
+    height: .8rem;
+    z-index: 400;
+    margin-top: .3rem;
+}
