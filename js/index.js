@@ -35,6 +35,7 @@ ajax.onreadystatechange = function() {
             committed.classList.add("committed");
             committed_link.innerHTML = "committed";
             committed_link.setAttribute("href", commit.url);
+            committed_link.setAttribute("target", "_blank")
             committed_link.classList.add("committed-text");
             committed.appendChild(committed_link);
 
