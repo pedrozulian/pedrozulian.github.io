@@ -14,7 +14,8 @@ ajax.onreadystatechange = function() {
     if (ajax.readyState == 4 && ajax.status == 200) {
         const data = ajax.response;
         
-        this.listCommits = data.slice(0, 10);
+        this.listCommits = data.slice(0, 13);
+        this.listCommits = getListCommits(this.listCommits);
         this.listCommits = getCommitsFromGithub(this.listCommits);
 
         this.listCommits.forEach((commit) => {
@@ -49,6 +50,16 @@ ajax.onreadystatechange = function() {
         });
 
     }
+}
+
+function getListCommits(data) {
+    const listCommits = []; 
+    data.map((row) => {
+        if (row.type === "PushEvent") {
+            listCommits.push(row);
+        }
+    });
+    return listCommits;
 }
 
 function formatUrlApiGithub(urlApiGithub, myUser) {
