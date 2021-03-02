@@ -1,0 +1,12 @@
+.drawer-content {
+   height: 100%;
+}
+
+.meus-commits {
+    float: right;
+    padding: .5rem;
+}
+
+.btn-meus-commits {
+    left: 0;
+}
