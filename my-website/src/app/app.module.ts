@@ -12,13 +12,13 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatTooltipModule  } from '@angular/material/tooltip';
+import { ActivitiesModule } from './modules/activities/activities.module';
 
-import { MeusCommitsComponent } from './components/meus-commits/meus-commits.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MeusCommitsComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -30,7 +30,8 @@ import { MeusCommitsComponent } from './components/meus-commits/meus-commits.com
     MatIconModule,
     MatListModule,
     MatTooltipModule,
-    HttpClientModule
+    HttpClientModule,
+    ActivitiesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
