@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GithubService } from 'src/app/core/services/github.service';
 
 @Component({
   selector: 'app-meus-commits',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MeusCommitsComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private githubService: GithubService
+  ) { }
 
-  ngOnInit(): void {
+  events = [];
+
+  ngOnInit() {
+    this.getEventsGithub();
+    console.log(this.events);
+  }
+
+  getEventsGithub() {
+    this.githubService.getEventsGithub()
+      .subscribe((events) => { this.events.push(events) });
   }
 
 }
