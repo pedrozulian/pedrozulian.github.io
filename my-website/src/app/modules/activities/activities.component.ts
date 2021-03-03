@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { GithubService } from 'src/app/core/services/github.service';
 
 @Component({
-  selector: 'app-meus-commits',
-  templateUrl: './meus-commits.component.html',
-  styleUrls: ['./meus-commits.component.css']
+  selector: 'app-activities',
+  templateUrl: './activities.component.html',
+  styleUrls: ['./activities.component.css']
 })
-export class MeusCommitsComponent implements OnInit {
+export class ActivitiesComponent implements OnInit {
 
   constructor(
     private githubService: GithubService
