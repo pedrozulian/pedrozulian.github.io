@@ -8,7 +8,13 @@
   <mat-drawer-content>
     <div class="drawer-content">
       <div class="meus-commits">
-        <button color="warn" mat-mini-fab (click)="drawer.toggle()">
+        <button 
+        color="warn" 
+        mat-mini-fab 
+        matTooltip="Minhas últimas atividades"
+        matTooltipPosition="left"
+        [matTooltipHideDelay]="hideDelay.value"
+        (click)="drawer.toggle()">
           <mat-icon>code</mat-icon>
         </button>
       </div>
