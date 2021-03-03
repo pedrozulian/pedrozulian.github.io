@@ -10,6 +10,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatTooltipModule  } from '@angular/material/tooltip';
+
 import { MeusCommitsComponent } from './components/meus-commits/meus-commits.component';
 
 @NgModule({
@@ -25,7 +27,8 @@ import { MeusCommitsComponent } from './components/meus-commits/meus-commits.com
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
