@@ -1,1 +1,22 @@
-<p>meus-commits works!</p>
+<div class="container mt-3 mb-3">
+    <div class="row text-center">
+        <h2 class="mat-h2">Minhas últimas atividades</h2>
+    </div>
+    <div class="text-center">
+        <mat-form-field appearance="fill">
+            <mat-label>Selecionar opção</mat-label>
+            <mat-select [(value)]="selected" (selectionChange)="selectChange($event)">
+              <mat-option *ngFor="let option of optionsSelect" [id]="option.id" [formControlName]="activity" [value]="option">
+                  {{ option.name }}
+              </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+</div>
+<mat-divider></mat-divider>
+<div class="container mt-2">
+    <div *ngIf="!currentContent" class="content">
+        <img class="img-fluid" src="../../../assets/svg/undraw_developer_activity.svg" alt="Developer Activity">
+    </div>
+</div>
+<app-last-commits *ngIf="currentContent == 1"></app-last-commits>
