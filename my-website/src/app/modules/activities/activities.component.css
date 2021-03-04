@@ -5,3 +5,8 @@ div.container-fluid {
 div.container-fluid div {
     padding-top: .5rem;
 }
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
