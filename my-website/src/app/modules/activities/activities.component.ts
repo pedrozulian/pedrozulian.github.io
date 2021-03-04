@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
-import { GithubService } from 'src/app/core/services/github.service';
 import { ComponentModel } from 'src/app/shared/models/components.model';
 
 @Component({
@@ -10,9 +9,7 @@ import { ComponentModel } from 'src/app/shared/models/components.model';
 })
 export class ActivitiesComponent implements OnInit {
 
-  constructor(
-    private githubService: GithubService
-  ) { }
+  constructor() { }
 
   optionsSelect: ComponentModel[] = [
     { id: 1, name: "Página inicial"},
@@ -21,16 +18,8 @@ export class ActivitiesComponent implements OnInit {
   activity = new FormControl('', Validators.required);
   selected: Object;
   currentContent: number;
-  events = [];
 
-  ngOnInit() {
-    this.getEventsGithub();
-  }
-
-  getEventsGithub() {
-    this.githubService.getEventsGithub()
-      .subscribe((events) => { this.events.push(events) });
-  }
+  ngOnInit() {}
 
   selectChange(event): void {
     this.currentContent = parseInt(event.value.id);
