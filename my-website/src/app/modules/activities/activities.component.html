@@ -15,8 +15,10 @@
 </div>
 <mat-divider></mat-divider>
 <div class="container mt-2">
-    <div *ngIf="!currentContent" class="content">
+    <div *ngIf="!currentContent || currentContent == 1">
+        <h1 class="mat-title text-center">blabla</h1>
         <img class="img-fluid" src="../../../assets/svg/undraw_developer_activity.svg" alt="Developer Activity">
     </div>
+
+    <app-last-commits *ngIf="currentContent == 2"></app-last-commits>
 </div>
-<app-last-commits *ngIf="currentContent == 1"></app-last-commits>

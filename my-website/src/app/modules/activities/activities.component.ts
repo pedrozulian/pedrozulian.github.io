@@ -15,7 +15,8 @@ export class ActivitiesComponent implements OnInit {
   ) { }
 
   optionsSelect: ComponentModel[] = [
-    { id: 1, name: 'Últimos commits', selector: 'app-last-commits' }
+    { id: 1, name: "Página inicial"},
+    { id: 2, name: 'Últimos commits', selector: 'app-last-commits' }
   ];
   activity = new FormControl('', Validators.required);
   selected: Object;
