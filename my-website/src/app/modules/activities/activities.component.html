@@ -1,6 +1,6 @@
 <div class="container mt-3 mb-3">
     <div class="row text-center">
-        <h2 class="mat-h2">Minhas últimas atividades</h2>
+        <p class="mat-caption">Minhas últimas atividades</p>
     </div>
     <div class="text-center">
         <mat-form-field appearance="fill">
@@ -15,9 +15,12 @@
 </div>
 <mat-divider></mat-divider>
 <div class="container mt-2">
-    <div *ngIf="!currentContent || currentContent == 1">
-        <h1 class="mat-title text-center">blabla</h1>
-        <img class="img-fluid" src="../../../assets/svg/undraw_developer_activity.svg" alt="Developer Activity">
+    <div *ngIf="!currentContent || currentContent == 1" class="text-center" style="margin-top: 25%;">
+        <h1 class="mat-h1 mb-4">Bem-vindo(a) ao meu cantinho preferido!</h1>
+        <h3 class="mat-h3">Tenho o hábito de sempre manter desde estudos pessoais e graduação até projetos pessoais em meus repositórios.</h3>
+        <h3 class="mat-h3">Por aqui você poderá ver minhas últimas linhas de códigos (commits) e principais repositórios.</h3>
+        <img class="img-fluid mt-2 mb-3" src="../../../assets/svg/undraw_developer_activity.svg" alt="Developer Activity">
+        <h3 class="mat-h3">Estas informações serão trazidas do meu <a target="#" href="https://github.com/pedrozulian">Github</a>.</h3>
     </div>
 
     <app-last-commits *ngIf="currentContent == 2"></app-last-commits>
