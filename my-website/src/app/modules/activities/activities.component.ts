@@ -11,18 +11,6 @@ export class ActivitiesComponent implements OnInit {
 
   constructor() { }
 
-  optionsSelect: ComponentModel[] = [
-    { id: 1, name: "Página inicial"},
-    { id: 2, name: 'Últimos commits', selector: 'app-last-commits' }
-  ];
-  activity = new FormControl('', Validators.required);
-  selected: Object;
-  currentContent: number;
-
   ngOnInit() {}
-
-  selectChange(event): void {
-    this.currentContent = parseInt(event.value.id);
-  }
 
 }
