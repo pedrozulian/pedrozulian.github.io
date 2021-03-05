@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatTabsModule } from '@angular/material/tabs';
 
 // Modules and Components from App
 import { SharedModule } from 'src/app/shared/components/last-commits/shared.module';
@@ -20,6 +21,7 @@ import { ActivitiesComponent } from './activities.component';
     MatFormFieldModule,
     MatSelectModule,
     MatDividerModule,
+    MatTabsModule,
     SharedModule
   ],
   exports: [
