@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GithubService } from 'src/app/core/services/github.service';
+import { GithubEvent } from '../../models/github/github-event.model';
 
 @Component({
   selector: 'app-last-commits',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LastCommitsComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private githubService: GithubService
+  ) { }
+
+  events: GithubEvent[] = [];
 
   ngOnInit(): void {
+    this.githubService.getEventsGithub()
+      .subscribe((events) => events);
   }
 
 }
