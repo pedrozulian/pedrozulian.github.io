@@ -26,4 +26,4 @@ import { LastCommitsComponent } from './last-commits.component';
     LastCommitsComponent
   ]
 })
-export class SharedModule { }
+export class LastCommitsModule { }

@@ -9,8 +9,8 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatTabsModule } from '@angular/material/tabs';
 
 // Modules and Components from App
-import { SharedModule } from 'src/app/shared/components/last-commits/shared.module';
 import { ActivitiesComponent } from './activities.component';
+import { LastCommitsModule } from '../last-commits/last-commits.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,7 @@ import { ActivitiesComponent } from './activities.component';
     MatSelectModule,
     MatDividerModule,
     MatTabsModule,
-    SharedModule
+    LastCommitsModule
   ],
   exports: [
     ActivitiesComponent

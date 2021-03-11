@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GithubService } from 'src/app/core/services/github.service';
-import { GithubEvent } from '../../models/github/github-event.model';
+import { GithubEvent } from '../../shared/models/github/github-event.model';
 
 @Component({
   selector: 'app-last-commits',

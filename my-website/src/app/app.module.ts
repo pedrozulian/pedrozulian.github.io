@@ -16,7 +16,7 @@ import { MatTooltipModule  } from '@angular/material/tooltip';
 // Modules inside project: Modules, Shared...
 import { AppRoutingModule } from './app-routing.module';
 import { ActivitiesModule } from './modules/activities/activities.module';
-import { SharedModule } from './shared/components/last-commits/shared.module';
+import { LastCommitsModule } from './modules/last-commits/last-commits.module';
 
 @NgModule({
   declarations: [
@@ -35,7 +35,7 @@ import { SharedModule } from './shared/components/last-commits/shared.module';
     MatTooltipModule,
     HttpClientModule,
     ActivitiesModule,
-    SharedModule
+    LastCommitsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
