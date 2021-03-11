@@ -1,4 +1,6 @@
-export interface GithubRepository {
+import { Deserializable } from '../deserializable.model';
+
+export class GithubRepository implements Deserializable {
     id?: number;
     node_id?: string;
     name?: string;
@@ -9,4 +11,8 @@ export interface GithubRepository {
     created_at?: string;
     updated_at?: string;
     git_url?: string;
+
+    deserialize(input: any): this {
+        return Object.assign(this, input);
+    }
 }

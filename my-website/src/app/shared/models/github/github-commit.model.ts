@@ -1,9 +1,12 @@
-import { GithubEvent } from './github-event.model';
+import { Deserializable } from '../deserializable.model';
 
-export interface GithubCommit extends GithubEvent {
+export class GithubCommit implements Deserializable {
     name?: string;
     email?: string;
     message?: string;
     sha?: string;
-    commits?: GithubEvent[];
+
+    deserialize(input: any): this {
+        return Object.assign(this, input);
+    }
 }
