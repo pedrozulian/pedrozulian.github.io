@@ -17,10 +17,11 @@ import { MatTooltipModule  } from '@angular/material/tooltip';
 import { AppRoutingModule } from './app-routing.module';
 import { ActivitiesModule } from './modules/activities/activities.module';
 import { LastCommitsModule } from './modules/last-commits/last-commits.module';
+import { HomeModule } from './modules/home/home.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
     
   ],
   imports: [
@@ -35,7 +36,8 @@ import { LastCommitsModule } from './modules/last-commits/last-commits.module';
     MatTooltipModule,
     HttpClientModule,
     ActivitiesModule,
-    LastCommitsModule
+    LastCommitsModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
