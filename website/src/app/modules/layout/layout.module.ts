@@ -7,11 +7,14 @@ import { CommonModule } from '@angular/common';
 // Components
 import { LayoutComponent } from './layout.component';
 import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     LayoutComponent,
-    HeaderComponent],
+    HeaderComponent,
+    FooterComponent
+  ],
   imports: [
     CommonModule
   ],
