@@ -1,9 +1,9 @@
 img {
-    height: 60%;
-    width: 70%;
-    transition: transform .2s;
+    height: 200px;
+    width: 300px;
+    transition: transform .4s;
 }
 
 img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
