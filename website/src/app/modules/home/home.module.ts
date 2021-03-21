@@ -7,13 +7,15 @@ import { CommonModule } from '@angular/common';
 // Components
 import { HomeComponent } from './home.component';
 import { PanelComponent } from './components/panel/panel.component';
+import { PanelItemComponent } from './components/panel-item/panel-item.component';
 
 
 
 @NgModule({
   declarations: [
     HomeComponent,
-    PanelComponent
+    PanelComponent,
+    PanelItemComponent
   ],
   imports: [
     CommonModule
