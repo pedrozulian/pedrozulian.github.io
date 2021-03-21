@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-panel-item',
@@ -9,7 +9,16 @@ export class PanelItemComponent implements OnInit {
 
   constructor() { }
 
+  @Input() image: string;
+  @Input() imageAlt: string;
+  @Input() title: string;
+  @Input() description: string;
+
   ngOnInit(): void {
+  }
+
+  getSrcImage() {
+    return '../../../../../assets/undraw/' + this.image;
   }
 
 }
