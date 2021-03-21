@@ -6,11 +6,15 @@ import { CommonModule } from '@angular/common';
 
 // Components
 import { HomeComponent } from './home.component';
+import { ActivitiesComponent } from './components/activities/activities.component';
 
 
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [
+    HomeComponent,
+    ActivitiesComponent
+  ],
   imports: [
     CommonModule
   ],
