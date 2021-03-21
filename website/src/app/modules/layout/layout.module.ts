@@ -8,6 +8,7 @@ import { CommonModule } from '@angular/common';
 import { LayoutComponent } from './layout.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HomeModule } from '../home/home.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FooterComponent } from './components/footer/footer.component';
     FooterComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    HomeModule
   ],
   exports: [
     LayoutComponent
