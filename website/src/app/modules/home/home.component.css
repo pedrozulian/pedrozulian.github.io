@@ -1,0 +1,9 @@
+img {
+    height: 12rem; 
+    width: 12rem;
+    transition: transform .4s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
