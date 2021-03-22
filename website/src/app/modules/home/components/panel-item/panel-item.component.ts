@@ -13,6 +13,7 @@ export class PanelItemComponent implements OnInit {
   @Input() imageAlt: string;
   @Input() title: string;
   @Input() description: string;
+  @Input() path: string;
 
   ngOnInit(): void {
   }
