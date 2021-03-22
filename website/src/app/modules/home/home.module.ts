@@ -3,13 +3,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 // Modules
+import { RouterModule } from '@angular/router';
 
 // Components
 import { HomeComponent } from './home.component';
 import { PanelComponent } from './components/panel/panel.component';
 import { PanelItemComponent } from './components/panel-item/panel-item.component';
-
-
 
 @NgModule({
   declarations: [
@@ -18,7 +17,8 @@ import { PanelItemComponent } from './components/panel-item/panel-item.component
     PanelItemComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     HomeComponent
