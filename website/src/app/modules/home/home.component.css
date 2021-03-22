@@ -7,3 +7,13 @@ img {
 img:hover {
     transform: scale(1.1);
 }
+
+.social-networks a {
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.social-networks i {
+    color: black;
+    font-size: 1.5rem;
+}
