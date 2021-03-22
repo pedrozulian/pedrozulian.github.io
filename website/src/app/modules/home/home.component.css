@@ -12,3 +12,7 @@ img {
     color: black;
     font-size: 1.5rem;
 }
+
+.social-networks i:hover {
+    color: dimgray;
+}
