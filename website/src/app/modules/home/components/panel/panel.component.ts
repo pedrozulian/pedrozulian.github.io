@@ -11,14 +11,15 @@ export class PanelComponent implements OnInit {
 
   panelItems: Object[] = [
     { image: 'undraw_building_websites.svg', imageAlt: 'Building Softwares',
-     title: 'Desenvolvimentos que participei', 
-     description: 'Softwares em que estive presente no desenvolvimento, seja profissionalmente ou relacionados a estudos.' },
+     title: 'Projetos e Softwares', 
+     description: 'Conheça os principais sistemas que desenvolvi ou participei do desenvolvimento em ambiente profissional e de estudos.' },
 
     { image: 'undraw_developer_activity.svg', imageAlt: 'Developer Activity',
-     title: 'Minhas últimas atividades', description: 'Estudos e projetos pessoais meus estão armazenados em meu repositório no Github. Fique à vontade para explorar, clonar, contribuir!' },
+     title: 'Atividades', 
+     description: 'Meus estudos e projetos pessoais estão armazenados em meu repositório no Github. Fique à vontade para explorar, clonar e contribuir!' },
 
     { image: 'undraw_sharing_articles.svg', imageAlt: 'Sharing Articles',
-     title: 'Contribuições para comunidade', description: 'Aqui estão minhas principais publicações e vídeos em que compartilho o conhecimento, afinal, ninguém cresce sozinho.' }
+     title: 'Contribuições', description: 'Aqui estão minhas principais publicações e vídeos em que compartilho o conhecimento, afinal, ninguém cresce sozinho.' }
   ];
 
   ngOnInit(): void {
