@@ -1,9 +1,4 @@
 img {
     height: 200px;
     width: 300px;
-    transition: transform .4s;
-}
-
-img:hover {
-    transform: scale(1.1);
 }
