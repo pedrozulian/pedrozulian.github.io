@@ -3,22 +3,24 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 // Modules
+import { HomeModule } from '../home/home.module';
+import { RouterModule } from '@angular/router';
 
 // Components
 import { LayoutComponent } from './layout.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { HomeModule } from '../home/home.module';
 
 @NgModule({
   declarations: [
     LayoutComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     CommonModule,
-    HomeModule
+    HomeModule,
+    RouterModule
   ],
   exports: [
     LayoutComponent
