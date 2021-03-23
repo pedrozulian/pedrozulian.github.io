@@ -7,13 +7,13 @@ import { RouterModule } from '@angular/router';
 
 // Components
 import { ActivitiesComponent } from './activities.component';
-import { ActivitiesSideMenuComponent } from './components/activities-side-menu/activities-side-menu.component';
+import { ActivitiesMenuComponent } from './components/activities-menu/activities-menu.component';
 
 
 @NgModule({
   declarations: [
     ActivitiesComponent, 
-    ActivitiesSideMenuComponent
+    ActivitiesMenuComponent
   ],
   imports: [
     CommonModule,

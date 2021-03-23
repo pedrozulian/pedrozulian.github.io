@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ActivitiesSideMenuComponent } from './activities-side-menu.component';
+import { ActivitiesMenuComponent } from './activities-menu.component';
 
-describe('ActivitiesSideMenuComponent', () => {
-  let component: ActivitiesSideMenuComponent;
-  let fixture: ComponentFixture<ActivitiesSideMenuComponent>;
+describe('ActivitiesMenuComponent', () => {
+  let component: ActivitiesMenuComponent;
+  let fixture: ComponentFixture<ActivitiesMenuComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ActivitiesSideMenuComponent ]
+      declarations: [ ActivitiesMenuComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ActivitiesSideMenuComponent);
+    fixture = TestBed.createComponent(ActivitiesMenuComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
