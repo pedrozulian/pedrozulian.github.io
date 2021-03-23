@@ -8,12 +8,14 @@ import { RouterModule } from '@angular/router';
 // Components
 import { ActivitiesComponent } from './activities.component';
 import { ActivitiesMenuComponent } from './components/activities-menu/activities-menu.component';
+import { ActivitiesCommitsComponent } from './components/activities-commits/activities-commits.component';
 
 
 @NgModule({
   declarations: [
     ActivitiesComponent, 
-    ActivitiesMenuComponent
+    ActivitiesMenuComponent, 
+    ActivitiesCommitsComponent
   ],
   imports: [
     CommonModule,
