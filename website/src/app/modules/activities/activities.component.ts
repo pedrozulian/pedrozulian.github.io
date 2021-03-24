@@ -9,7 +9,14 @@ export class ActivitiesComponent implements OnInit {
 
   constructor() { }
 
+  idComponentSelected: number;
+  commitsComponent: boolean
+
   ngOnInit(): void {
+  }
+
+  showComponent(id: number) {
+    this.commitsComponent = id === 1 ? true : false;
   }
 
 }
