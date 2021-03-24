@@ -1,5 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Observable, throwError } from 'rxjs';
+import { catchError, retry, map } from 'rxjs/operators';
+import { CommitGithub } from 'src/app/shared/models/github/commit.model';
+import { EventsGithub } from 'src/app/shared/models/github/events.model';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +14,20 @@ export class GithubService {
     private http: HttpClient 
   ) { }
 
-  public getEvents() {
-    return this.http.get('https://api.github.com/users/pedrozulian/events');
+  public getEvents(): Observable<EventsGithub[]> {
+    return this.http
+            .get<EventsGithub[]>('https://api.github.com/users/pedrozulian/events')
+            .pipe(
+              map((events => events.map(eve => new EventsGithub().deserialize(eve)))
+              )
+            );
+  }
+
+  public getCommits() {
+    return this.http
+            .get<CommitGithub[]>('https://api.github.com/users/pedrozulian/events')
+            .pipe(
+              map(events => events.map((eve: EventsGithub) => eve.payload.commits.map(commit => new CommitGithub().deserialize(commit))))
+            );
   }
 }
