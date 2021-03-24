@@ -1,4 +1,4 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-activities-menu',
@@ -9,7 +9,7 @@ export class ActivitiesMenuComponent implements OnInit {
 
   constructor() { }
 
-  @Output() idComponent: number;
+  @Output() idComponentSelected = new EventEmitter();
 
   componentOptions: Object[] = [
     { id: 1, name: 'Commits', componentSelector: 'app-activities-commits' },
@@ -20,7 +20,7 @@ export class ActivitiesMenuComponent implements OnInit {
   }
 
   chooseComponent(id: number) {
-    this.idComponent = id;
+    this.idComponentSelected.emit(id);
   }
 
 }
