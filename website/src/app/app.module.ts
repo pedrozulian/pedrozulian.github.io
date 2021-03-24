@@ -8,6 +8,7 @@ import { LayoutModule } from './modules/layout/layout.module';
 import { HomeModule } from './modules/home/home.module';
 import { RouterModule } from '@angular/router';
 import { ActivitiesModule } from './modules/activities/activities.module';
+import { HttpClientModule } from '@angular/common/http';
 
 // Components
 import { AppComponent } from './app.component';
@@ -22,7 +23,8 @@ import { AppComponent } from './app.component';
     RouterModule,
     LayoutModule,
     HomeModule,
-    ActivitiesModule
+    ActivitiesModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
