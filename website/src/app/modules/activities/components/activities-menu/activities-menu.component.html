@@ -5,9 +5,8 @@
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Opções
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">Commits</button>
-              <button class="dropdown-item" type="button">Repositórios</button>
+            <div  class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <button *ngFor="let component of componentOptions;" (click)="chooseComponent(component.id)" class="dropdown-item" type="button">{{ component.name }}</button>
             </div>
           </div>
     </div>
