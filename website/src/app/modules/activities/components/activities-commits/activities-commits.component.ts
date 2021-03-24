@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GithubService } from 'src/app/core/services/github.service';
+import { CommitGithub } from 'src/app/shared/models/github/commit.model';
 
 @Component({
   selector: 'app-activities-commits',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActivitiesCommitsComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private githubService: GithubService
+  ) { }
+
+  commits: CommitGithub[][];
 
   ngOnInit(): void {
+    this.getEvents();
+  }
+
+  getEvents() {
+    this.githubService.getCommits()
+      .subscribe(data => this.commits = data);
   }
 
 }
