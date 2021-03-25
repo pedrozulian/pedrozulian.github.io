@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 
 // Modules
 import { RouterModule } from '@angular/router';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 // Components
 import { ActivitiesComponent } from './activities.component';
@@ -19,7 +20,8 @@ import { ActivitiesCommitsComponent } from './components/activities-commits/acti
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    NgxPaginationModule
   ],
   exports: [ActivitiesComponent]
 })
