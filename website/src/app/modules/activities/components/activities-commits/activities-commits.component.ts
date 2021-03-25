@@ -14,6 +14,7 @@ export class ActivitiesCommitsComponent implements OnInit {
   ) { }
 
   commits: CommitGithub[];
+  p: number = 1;
 
   ngOnInit(): void {
     this.getEvents();
