@@ -4,6 +4,7 @@ import { Observable, throwError } from 'rxjs';
 import { catchError, retry, map } from 'rxjs/operators';
 import { CommitGithub } from 'src/app/shared/models/github/commit.model';
 import { EventsGithub } from 'src/app/shared/models/github/events.model';
+import { RepositoryGithub } from 'src/app/shared/models/github/repository.model';
 
 @Injectable({
   providedIn: 'root'
@@ -29,5 +30,13 @@ export class GithubService {
             .pipe(
               map(events => events.map((eve: EventsGithub) => eve.payload.commits.map(commit => new CommitGithub().deserialize(commit))))
             );
+  }
+
+  public getRepositories() {
+    return this.http
+            .get<RepositoryGithub[]>('https://api.github.com/users/pedrozulian/repos')
+            .pipe(
+              map(repositories => repositories.map(repo => new RepositoryGithub().deserialize(repo)))
+            )
   }
 }
