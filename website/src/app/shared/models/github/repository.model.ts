@@ -7,6 +7,9 @@ export class RepositoryGithub implements Deserializable {
     full_name?: string;
     private?: boolean;
     html_url?: string;
+    watchers?: number;
+    stargazers_count?: number;
+    clone_url?: string;
 
     deserialize(input: unknown): this {
         return Object.assign(this, input);
