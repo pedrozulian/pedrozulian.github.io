@@ -28,7 +28,9 @@ export class GithubService {
     return this.http
             .get<CommitGithub[]>('https://api.github.com/users/pedrozulian/events')
             .pipe(
-              map(events => events.map((eve: EventsGithub) => eve.payload.commits.map(commit => new CommitGithub().deserialize(commit))))
+              map(events => 
+                events.map((eve: EventsGithub) => 
+                  eve.payload.commits ? eve.payload.commits.map(commit => new CommitGithub().deserialize(commit)) : 'Another Event'))
             );
   }
 
