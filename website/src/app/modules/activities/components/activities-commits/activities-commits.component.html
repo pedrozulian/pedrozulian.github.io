@@ -5,6 +5,9 @@
                 <span class="message font-weight-bold">
                     {{ commit.message }}
                 </span>
+                <span class="committed">
+                    <a [href]="urlRepo" ng-href="{{formatLinkRepo(commit.url, commit.sha)}}" target="_blank"> committed </a>
+                </span>
             </div>
         </li>
     </ul>
