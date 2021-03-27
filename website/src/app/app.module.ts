@@ -10,10 +10,33 @@ import { RouterModule } from '@angular/router';
 import { ActivitiesModule } from './modules/activities/activities.module';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgxUiLoaderConfig, NgxUiLoaderModule, NgxUiLoaderRouterModule } from 'ngx-ui-loader';
 
 // Components
 import { AppComponent } from './app.component';
 
+const ngxUiLoaderConfig: NgxUiLoaderConfig = {
+  'bgsColor': '#6B62FD',
+  'bgsOpacity': 0.6,
+  'bgsPosition': 'center-center',
+  'bgsSize': 90,
+  'bgsType': 'three-bounce',
+  'fgsColor': '#6B62FD',
+  'fgsPosition': 'center-center',
+  'fgsSize': 50,
+  'fgsType': 'three-bounce',
+  'gap': 36,
+  'logoPosition': 'center-center',
+  'logoSize': 120,
+  'logoUrl': '',
+  'masterLoaderId': 'master',
+  'overlayBorderRadius': '0',
+  'overlayColor': 'rgba(40, 40, 40, 0.5)',
+  'pbColor': '#6B62FD',
+  'pbDirection': 'ltr',
+  'pbThickness': 3,
+  'hasProgressBar': true,
+};
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +45,8 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     RouterModule,
+    NgxUiLoaderRouterModule,
+    NgxUiLoaderModule.forRoot(ngxUiLoaderConfig),
     LayoutModule,
     HomeModule,
     ActivitiesModule,
