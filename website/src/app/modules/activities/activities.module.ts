@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 // Modules
 import { RouterModule } from '@angular/router';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { NgbPopoverModule } from '@ng-bootstrap/ng-bootstrap';
 
 // Components
 import { ActivitiesComponent } from './activities.component';
@@ -23,7 +24,8 @@ import { ActivitiesRepositoriesComponent } from './components/activities-reposit
   imports: [
     CommonModule,
     RouterModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    NgbPopoverModule
   ],
   exports: [ActivitiesComponent]
 })
