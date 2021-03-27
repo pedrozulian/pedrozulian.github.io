@@ -8,6 +8,9 @@
                 <span class="committed">
                     <a [href]="urlRepo" ng-href="{{formatLinkRepo(commit.url, commit.sha)}}" target="_blank"> committed </a>
                 </span>
+                <span class="repository">
+                    on repository {{ getNameRepo(commit.url) }}
+                </span>
             </div>
         </li>
     </ul>
