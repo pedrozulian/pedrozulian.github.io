@@ -4,6 +4,7 @@ export class CommitGithub implements Deserializable {
     sha?: string;
     author?: { email?: string, name?: string };
     message?: string;
+    url?: string;
 
     deserialize(input: unknown): this {
         return Object.assign(this, input);
