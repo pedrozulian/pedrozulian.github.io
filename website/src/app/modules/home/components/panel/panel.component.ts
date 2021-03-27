@@ -21,7 +21,7 @@ export class PanelComponent implements OnInit {
      path: '/atividades' },
 
     { image: 'undraw_sharing_articles.svg', imageAlt: 'Sharing Articles',
-     title: 'Contribuições', description: 'Aqui estão minhas principais publicações e vídeos em que compartilho o conhecimento, afinal, ninguém cresce sozinho.',
+     title: 'Blog', description: 'Aqui estão minhas principais publicações e vídeos em que compartilho o conhecimento, afinal, ninguém cresce sozinho.',
      path: '#' }
   ];
 
