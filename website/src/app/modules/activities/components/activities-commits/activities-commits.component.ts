@@ -38,4 +38,9 @@ export class ActivitiesCommitsComponent implements OnInit {
     }
   }
 
+  getNameRepo(url: string) {
+    const test = url.match(/\/repos\/.*?\/.*?\//);
+    return test[0].replace('/repos/', '').replace(/\/$/, '');
+  }
+
 }
