@@ -16,12 +16,12 @@ import { NgxUiLoaderConfig, NgxUiLoaderModule, NgxUiLoaderRouterModule } from 'n
 import { AppComponent } from './app.component';
 
 const ngxUiLoaderConfig: NgxUiLoaderConfig = {
-  'bgsColor': '#6B62FD',
+  'bgsColor': '#7C75FF',
   'bgsOpacity': 0.6,
   'bgsPosition': 'center-center',
   'bgsSize': 90,
   'bgsType': 'three-bounce',
-  'fgsColor': '#6B62FD',
+  'fgsColor': '#7C75FF',
   'fgsPosition': 'center-center',
   'fgsSize': 50,
   'fgsType': 'three-bounce',
@@ -32,7 +32,7 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
   'masterLoaderId': 'master',
   'overlayBorderRadius': '0',
   'overlayColor': 'rgba(40, 40, 40, 0.5)',
-  'pbColor': '#6B62FD',
+  'pbColor': '#7C75FF',
   'pbDirection': 'ltr',
   'pbThickness': 3,
   'hasProgressBar': true,
