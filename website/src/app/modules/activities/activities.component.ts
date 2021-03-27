@@ -11,7 +11,7 @@ export class ActivitiesComponent implements OnInit {
 
   idComponentSelected: number;
   commitsComponent: boolean;
-  repositoriesComponent: boolean;
+  repositoriesComponent: boolean = true;
 
   ngOnInit(): void {
   }
