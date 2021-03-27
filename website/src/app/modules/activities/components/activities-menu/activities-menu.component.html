@@ -1,0 +1,14 @@
+<div class="menu d-flex justify-content-center">
+    <div class="form-group form-inline">
+        <h5>Escolha  o que deseja ver</h5>
+        <div class="dropdown ml-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Opções
+            </button>
+            <div  class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <button *ngFor="let component of componentOptions;" (click)="chooseComponent(component.id)" class="dropdown-item" type="button">{{ component.name }}</button>
+            </div>
+          </div>
+    </div>
+</div>
+<hr>
