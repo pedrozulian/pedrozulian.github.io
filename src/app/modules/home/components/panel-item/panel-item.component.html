@@ -1,0 +1,14 @@
+<div class="d-flex justify-content-center">
+    <div class="text-center" style="width: 80%;">
+        <a [routerLink]="path" style="width: 80%;">
+            <img class="mb-3 img-zoom" [src]="getSrcImage()" [alt]="imageAlt">
+        </a>
+        <h3 class="font-weight-bold">{{ title }} </h3>
+        <span
+        style="background-color: #6C63FF !important; color: white !important;" 
+        *ngIf="path === '#'"
+        class="badge rounded-pill bg-primary d-inline">Em breve
+        </span>
+        <p>{{ description }}</p>
+    </div>
+</div>
