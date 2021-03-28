@@ -24,7 +24,7 @@ export class ActivitiesCommitsComponent implements OnInit {
   getEvents() {
     this.githubService.getCommits()
       .subscribe(data => {
-        this.commits = [].concat.apply([], data);
+        this.commits = [].concat.apply([], data.filter(d => d !== 'Another Event'));
       });
   }
 
