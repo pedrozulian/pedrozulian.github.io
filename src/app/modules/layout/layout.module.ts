@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 // Modules
 import { HomeModule } from '../home/home.module';
 import { RouterModule } from '@angular/router';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 // Components
 import { LayoutComponent } from './layout.component';
@@ -20,7 +21,8 @@ import { FooterComponent } from './components/footer/footer.component';
   imports: [
     CommonModule,
     HomeModule,
-    RouterModule
+    RouterModule,
+    MatToolbarModule,
   ],
   exports: [
     LayoutComponent
