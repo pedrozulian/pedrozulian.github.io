@@ -1,17 +1,8 @@
-<nav class="navbar navbar-expand-lg">
+<nav>
   <mat-toolbar>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" routerLink="/home">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/atividades">Atividades</a>
-        </li>
-      </ul>
-    </div>
+    <mat-toolbar-row>
+      <span><a routerLink="/home">Home <span class="sr-only">(current)</span></a></span>
+      <span><a routerLink="/atividades">Atividades</a></span>
+    </mat-toolbar-row>
   </mat-toolbar>
 </nav>
