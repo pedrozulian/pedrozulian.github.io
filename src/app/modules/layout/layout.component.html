@@ -1,6 +1,6 @@
 <div class="app-frame mat-app-background layout">
     <div id="wrapper">
-        <app-header></app-header>
+        <app-header (darkModeSwitched)="switchMode($event)"></app-header>
         <div class="wrapper wrapper-content">
             <router-outlet></router-outlet>
         </div>
