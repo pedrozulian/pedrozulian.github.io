@@ -11,8 +11,10 @@ a {
 span {
     margin-left: 1rem;
     margin-right: 1rem;
+    font-size: 1rem;
 }
 
-.mat-toolbar-row {
-    justify-content: center;
-}
+.spacer {
+    flex: 1 1 auto;
+  }
+  
