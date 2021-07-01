@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { NgbPopoverModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 
 // Components
 import { ActivitiesComponent } from './activities.component';
@@ -27,7 +28,8 @@ import { ActivitiesRepositoriesComponent } from './components/activities-reposit
     RouterModule,
     NgxPaginationModule,
     NgbPopoverModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   exports: [ActivitiesComponent]
 })
