@@ -38,6 +38,10 @@ export class ActivitiesCommitsComponent implements OnInit {
     }
   }
 
+  formatLinkRepo(url: string) {
+    return 'https://github.com/' + this.getNameRepo(url);
+  }
+
   getNameRepo(url: string) {
     const test = url.match(/\/repos\/.*?\/.*?\//);
     return test[0].replace('/repos/', '').replace(/\/$/, '');
