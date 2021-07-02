@@ -1,29 +1,8 @@
-ul.timeline {
-    list-style-type: none;
-    position: relative;
-}
-ul.timeline:before {
-    content: ' ';
-    background: #d4d9df;
-    position: absolute;
-    width: 2px;
-    height: 100%;
-    z-index: 400;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-ul.timeline > li {
-    padding-left: 20px;
-}
-
-ul.timeline > li span.message:before {
-    content: ' ';
-    background: white;
-    position: absolute;
-    border-radius: 50%;
-    border: 2px solid #555555;
-    left: 2rem;
-    width: 1rem;
-    height: 1rem;
-    z-index: 400;
-    margin-top: .3rem;
+.my-pagination /deep/ .ngx-pagination .current {
+    background: #673ab7;
 }
