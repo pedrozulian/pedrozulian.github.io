@@ -30,6 +30,18 @@ $website-theme-dark: mat-dark-theme((
     @include angular-material-theme($website-theme-dark);
 }
 
+.primary-color {
+  color: mat-color($website-primary);
+}
+
+.accent-color {
+  color: mat-color($website-accent);
+}
+
+.warn-color {
+  color: mat-color($website-warn);
+}
+
 .img-zoom {
     transition: transform .3s;
 }
