@@ -9,6 +9,7 @@ import { NgbPopoverModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatRadioModule } from '@angular/material/radio';
 
 // Components
 import { ActivitiesComponent } from './activities.component';
@@ -31,7 +32,8 @@ import { ActivitiesRepositoriesComponent } from './components/activities-reposit
     NgbPopoverModule,
     MatCardModule,
     MatButtonModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatRadioModule
   ],
   exports: [ActivitiesComponent]
 })
