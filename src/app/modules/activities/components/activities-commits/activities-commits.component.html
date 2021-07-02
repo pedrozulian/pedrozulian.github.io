@@ -2,23 +2,22 @@
     <h3 class="font-weight-bold">Meus commits</h3>
 </div>
 <div>
-    <ul class="timeline">
-        <li *ngFor="let commit of commits | paginate: { itemsPerPage: 15, currentPage: p }">
-            <div class="shadow p-3 mb-3 bg-white rounded">
-                <span class="message font-weight-bold">
-                    {{ commit.message }}
-                </span>
-                <span class="committed">
-                    <a [href]="urlRepo" ng-href="{{formatLinkRepo(commit.url, commit.sha)}}" target="_blank"> committed </a>
-                </span>
-                <span class="repository">
-                    on repository {{ getNameRepo(commit.url) }}
-                </span>
-            </div>
-        </li>
-    </ul>
+    <div class="mb-3" *ngFor="let commit of commits | paginate: { itemsPerPage: 15, currentPage: p }">
+        <mat-accordion class="accordion" multi>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <p class="font-weight-bold">{{ getNameRepo(commit.url) }}</p> <p class="ml-1" color="primary">{{ commit.message }}</p>
+                    </mat-panel-title>
+                        
+                </mat-expansion-panel-header>
+                <span><a mat-button color="primary" [href]="urlCommit" ng-href="{{formatLinkCommit(commit.url, commit.sha)}}" target="_blank">Detalhes</a></span>
+                <span><a mat-button color="primary" href="{{formatLinkRepo(commit.url)}}" target="_blank">Repositório</a></span>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
     <pagination-controls
-    class="text-center"
+    class="text-center my-pagination"
     (pageChange)="p = $event"
     previousLabel="Anterior"
     nextLabel="Próximo">
