@@ -2,11 +2,9 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="container">
-                    <h3 class="font-weight-bold text-center p-2">Commits e principais repositórios</h3>
-                    <app-activities-menu
-                    (idComponentSelected)="showComponent($event)"></app-activities-menu>
-                </div>
+                <h3 class="font-weight-bold pt-2">Commits e principais repositórios</h3>
+                <app-activities-menu
+                (idComponentSelected)="showComponent($event)"></app-activities-menu>
             </div>
             <div class="col-12">
                 <app-activities-commits *ngIf="commitsComponent"></app-activities-commits>
