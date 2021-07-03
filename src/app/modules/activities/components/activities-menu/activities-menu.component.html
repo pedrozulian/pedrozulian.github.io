@@ -1,14 +1,18 @@
-<div class="menu d-flex justify-content-center">
-    <div class="form-group form-inline">
-        <h5>Escolha  o que deseja ver</h5>
-        <div class="dropdown ml-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Opções
-            </button>
-            <div  class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button *ngFor="let component of componentOptions;" (click)="chooseComponent(component.id)" class="dropdown-item" type="button">{{ component.name }}</button>
-            </div>
-          </div>
-    </div>
+<div>
+  <p class="body-1">
+    Aqui é possível visualizar de forma um pouco mais prática, todos os meus repositórios e meus últimos commits
+    em meus projetos open source.<br>
+    Portanto, basta selecionar o que deseja ver e fique à vontade para ver detalhes, dar sugestões ou ideias, clonar e contribuir.
+  </p>
+  <mat-radio-group>
+    <mat-radio-button
+    class="ml-2"
+    *ngFor="let component of componentOptions;"
+    (click)="chooseComponent(component.id)"
+    [checked]="component.checked"
+    value="{{component.id}}">
+      {{ component.name }}
+    </mat-radio-button>
+  </mat-radio-group>
 </div>
 <hr>

@@ -17,8 +17,8 @@ export class ActivitiesComponent implements OnInit {
   }
 
   showComponent(id: number) {
-    this.commitsComponent      = id === 1 ? true : false;
-    this.repositoriesComponent = id === 2 ? true : false;
+    this.repositoriesComponent = id === 1 ? true : false;
+    this.commitsComponent      = id === 2 ? true : false;
   }
 
 }

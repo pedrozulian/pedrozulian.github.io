@@ -1,0 +1,54 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import '~@angular/material/theming';
+@include mat-core();
+
+$website-primary: mat-palette($mat-blue-grey);
+$website-accent: mat-palette($mat-deep-purple, A200, A100, A400);
+$website-warn: mat-palette($mat-red);
+
+$website-theme: mat-light-theme((
+  color: (
+    primary: $website-primary,
+    accent: $website-accent,
+    warn: $website-warn,
+  )
+));
+
+$website-theme-dark: mat-dark-theme((
+  color: (
+    primary: $website-primary,
+    accent: $website-accent,
+    warn: $website-warn,
+  )
+));
+
+.theme-light {
+    @include angular-material-theme($website-theme);
+}
+
+.theme-dark {
+    @include angular-material-theme($website-theme-dark);
+}
+
+.primary-color {
+  color: mat-color($website-primary);
+}
+
+.accent-color {
+  color: mat-color($website-accent);
+}
+
+.warn-color {
+  color: mat-color($website-warn);
+}
+
+.img-zoom {
+    transition: transform .3s;
+}
+
+.img-zoom:hover {
+    transform: scale(1.1);
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
