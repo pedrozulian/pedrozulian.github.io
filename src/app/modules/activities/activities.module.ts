@@ -6,6 +6,10 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { NgbPopoverModule } from '@ng-bootstrap/ng-bootstrap';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatRadioModule } from '@angular/material/radio';
 
 // Components
 import { ActivitiesComponent } from './activities.component';
@@ -25,7 +29,11 @@ import { ActivitiesRepositoriesComponent } from './components/activities-reposit
     CommonModule,
     RouterModule,
     NgxPaginationModule,
-    NgbPopoverModule
+    NgbPopoverModule,
+    MatCardModule,
+    MatButtonModule,
+    MatExpansionModule,
+    MatRadioModule
   ],
   exports: [ActivitiesComponent]
 })

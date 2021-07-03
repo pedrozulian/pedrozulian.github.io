@@ -12,8 +12,8 @@ export class ActivitiesMenuComponent implements OnInit {
   @Output() idComponentSelected = new EventEmitter();
 
   componentOptions: Object[] = [
-    { id: 1, name: 'Commits', componentSelector: 'app-activities-commits' },
-    { id: 2, name: 'Repositórios', componentSelector: 'app-activities-repositories' }
+    { id: 1, name: 'Repositórios', componentSelector: 'app-activities-repositories', checked: true },
+    { id: 2, name: 'Commits', componentSelector: 'app-activities-commits', checked: false }
   ];
 
   ngOnInit(): void {

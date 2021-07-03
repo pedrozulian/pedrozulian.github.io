@@ -15,7 +15,7 @@ export class ActivitiesCommitsComponent implements OnInit {
 
   commits: CommitGithub[];
   p: number = 1;
-  urlRepo: string[];
+  urlCommit: string[];
 
   ngOnInit(): void {
     this.getEvents();
@@ -28,14 +28,18 @@ export class ActivitiesCommitsComponent implements OnInit {
       });
   }
 
-  formatLinkRepo(url: string, sha: string) {
+  formatLinkCommit(url: string, sha: string) {
     if (url) {
       const link = url.replace('api.', '')
                       .replace('/repos', '')
                       .replace('commits', 'commit');
-      this.urlRepo = [link];
-      return this.urlRepo;
+      this.urlCommit = [link];
+      return this.urlCommit;
     }
+  }
+
+  formatLinkRepo(url: string) {
+    return 'https://github.com/' + this.getNameRepo(url);
   }
 
   getNameRepo(url: string) {

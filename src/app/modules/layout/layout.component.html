@@ -1,7 +1,9 @@
-<div id="wrapper">
-    <app-header></app-header>
-    <div class="wrapper wrapper-content">
-        <router-outlet></router-outlet>
+<div class="app-frame mat-typography mat-app-background">
+    <div id="wrapper">
+        <app-header (darkModeSwitched)="switchMode($event)"></app-header>
+        <div class="wrapper wrapper-content">
+            <router-outlet></router-outlet>
+        </div>
+        <app-footer></app-footer>
     </div>
-    <app-footer></app-footer>
 </div>

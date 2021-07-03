@@ -14,6 +14,7 @@ import { NgxUiLoaderConfig, NgxUiLoaderModule, NgxUiLoaderRouterModule } from 'n
 
 // Components
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const ngxUiLoaderConfig: NgxUiLoaderConfig = {
   'bgsColor': '#7C75FF',
@@ -51,7 +52,8 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
     HomeModule,
     ActivitiesModule,
     HttpClientModule,
-    NgbModule
+    NgbModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
