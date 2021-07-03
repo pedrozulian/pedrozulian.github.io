@@ -21,3 +21,13 @@ img {
     margin-top: 3.5rem;
     margin-bottom: 3.5rem;
 }
+
+.mat-display-3, .mat-typography .mat-display-3 {
+    margin: 16px 0 16px;
+    font-weight: bolder;
+}
+
+.mat-display-1, .mat-typography .mat-display-1 {
+    margin: 0 0 10px;
+    color: #a9a9a9;
+}
